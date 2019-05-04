@@ -17,11 +17,11 @@ $(function(){
     });
 
 
-    $('.shopping-item-delete').on('click', function(event){
-      this.parent('li').remove();
+    $('.shopping-list').on('click', '.shopping-item-delete', function(event){
+      console.log('delete clicked');
+      $(this).closest('li').remove();
 
     });
-
 
 
 
